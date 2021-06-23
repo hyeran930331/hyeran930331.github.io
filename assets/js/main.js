@@ -68,6 +68,12 @@ jQuery(document).ready(function($) {
     
     /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
     GitHubActivity.feed({ username: "mdo", selector: "#ghfeed" });
+    GitHubActivity.feed({
+	  username: "hyeran930331",
+	  repository: "https://github.com/hyeran930331/github-activity", // optional
+	  selector: "#feed",
+	  limit: 20, // optional
+	});
 
 
 });
