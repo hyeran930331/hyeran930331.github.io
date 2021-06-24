@@ -21,6 +21,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #778492;
 }
 
+tr:noline {
+ border-top: none;
+
+}
+p .center {
+	text-align : center;
+}
+
 a {
   color: #3AAA64;
   -webkit-transition: all 0.4s ease-in-out;
@@ -152,6 +160,12 @@ a.dotted-link:hover {
   margin-top: 0;
   margin-bottom: 15px;
 }
+
+.header .profile-content .sub {
+  color: #778492;
+  font-family: "Lato", arial, sans-serif;
+}
+
 
 .header .profile-content .social a {
   background: #b0b7bf;
@@ -383,17 +397,22 @@ a.dotted-link:hover {
   font-size: 18px;
 }
 
-.ghfeed {
+.feed {
   height: 500px;
 }
 
-.ghfeed,
-.ghfeed *,
-.ghfeed *:before,
-.ghfeed *:after {
+.feed,
+.feed *,
+.feed *:before,
+.feed *:after {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
+}
+
+/* Info Section */
+.list-unstyled .svg-inline--fa {
+  color: #ccd1d6;
 }
 
 /* Info Section */
@@ -517,15 +536,39 @@ a.dotted-link:hover {
 
 .education .item .university {
   font-family: "Lato", arial, sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   color: #999;
-  font-weight: 600;
+  font-weight: normal;
   padding-left: 25px;
 }
 
 .education .item .university .year {
   color: #b0b7bf;
   font-weight: 500;
+}
+
+/* tools Section */
+.tools .item {
+  margin-bottom: 15px;
+}
+
+.tools .item .title {
+  font-size: 16px;	
+  font-weight: bold;
+}
+
+.tools .item .level {
+  font-weight: normal;
+  font-size: 15px;	
+}
+
+.tools .item .level .ver {
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.tools .item:last-child {
+  margin-bottom: 0;
 }
 
 /* Language Section */
@@ -538,6 +581,7 @@ a.dotted-link:hover {
 }
 
 .languages .item .level {
+  padding-left: 25px;	
   color: #999;
 }
 
@@ -622,6 +666,18 @@ a.dotted-link:hover {
 .aside .subheading {
   font-size: 18px;
   color: #545e69;
+}
+
+.aside .title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #778492;
+}
+
+.aside .level {
+  font-size: 14px;
+  font-weight: normal;
+  padding-left: 25px;
 }
 
 /* ======= Footer ======= */
